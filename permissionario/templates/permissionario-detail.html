@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+<title>Lista dos Permissionarios</title>
+{% endblock %}
+
+{% block conteudo %}
+<div>
+    <h1>Detalhes</h1>
+    <p>Nome: {{object.nome}}</p>
+    <p>Sobrenome: {{object.sobrenome}}</p>
+    <p>CPF: {{object.cpf}}</p>
+</div>
+{% endblock %}

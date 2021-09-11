@@ -2,6 +2,8 @@
 
 {% block conteudo %}
 <div>
-    <h1>Minha página Inicial</h1>
+    <h1>Cadastro de Permissionários</h1>
+    <p><a href="{% url 'permissionario-create' %}">Cadastrar Permissionário</a></p>
+    <p><a href="{% url 'permissionario-list' %}">Listar Permissionário</a></p>
 </div>
 {% endblock %}

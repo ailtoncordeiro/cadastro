@@ -10,7 +10,9 @@
     <ul>
         {% for permissionario in object_list %}
         <li>
-            {{permissionario.nome}}
+            <a href="{% url 'permissionario-detail' permissionario.pk %}">{{permissionario.nome}}</a> 
+            - <a href="{% url 'permissionario-update' permissionario.pk %}">Editar</a> - 
+            <a href="{% url 'permissionario-delete' permissionario.pk %}">Excluir</a>
         </li>
         {% endfor %}
     </ul>   

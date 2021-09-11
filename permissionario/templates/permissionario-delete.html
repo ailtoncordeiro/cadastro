@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+<title>Excluir Permissionarios</title>
+{% endblock %}
+
+{% block conteudo %}
+<div>
+    <h1>Excluir Permissionários</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <p>Você realmente deseja exluir o permissionário {{object.nome}} - {{object.cpf}} ?</p>
+        <input type="submit" value="Excluir">
+    </form>
+</div>
+{% endblock %}
